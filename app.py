@@ -1,6 +1,10 @@
-from flask import flask
-app= Flask(--name--)
+from flask import Flask
 
-@app.route("/")
-def hello():
-    return "Wild Rydes | Jaskirat Athwal | 101001605"
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Wild Rydes - Developer: Jaskirat Kaur, Student ID: 101001605"
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8080)
